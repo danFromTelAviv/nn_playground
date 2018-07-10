@@ -202,7 +202,7 @@ class QRNN(Layer):
             initial_states = inputs[1:]
             inputs = inputs[0]
         elif initial_state is not None:
-            pass
+            initial_states = initial_state
         elif self.stateful:
             initial_states = self.states
         else:
